@@ -11,7 +11,9 @@ public class Main {
         customerArray.add("Seven");
         customerArray.add("Nine");
         customerArray.add("Ten");
-        System.out.println(customerArray.getSize());
+
+       System.out.println(customerArray.indexOf("Nine"));
+       System.out.println(customerArray.getSize());
         customerArray.add("Eleven");
         System.out.println(customerArray.getSize());
         System.out.println(customerArray.equals(customerArray.get(1), customerArray.get(1)));
