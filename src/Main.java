@@ -16,12 +16,16 @@ public class Main {
        System.out.println(customerArray.getSize());
         customerArray.add("Eleven");
         System.out.println(customerArray.getSize());
-        System.out.println(customerArray.equals(customerArray.get(1), customerArray.get(1)));
-        System.out.println(customerArray.equals(customerArray.get(1), customerArray.get(2)));
-        System.out.println(customerArray.get(1));
-        customerArray.delete(customerArray.get(1));
+        System.out.println(customerArray.getByIndex(1));
+        customerArray.deleteByIndex(1);
+        customerArray.deleteByValue("Four");
         System.out.println(customerArray.toString());
         System.out.println((customerArray.contains("Six"))? "Array contains Six": "Array doesn't contain Six");
+        System.out.println( customerArray.equals( customerArray));
+        CustomerArray customerArray1 = new CustomerArray();
+        System.out.println( customerArray.equals( customerArray1));
+        customerArray.trim();
+        System.out.println(customerArray.toString());
         customerArray.clear();
         System.out.println(customerArray.toString());
     }
