@@ -134,8 +134,7 @@ public class CustomerArray {
               continue;
             };
             if (!anotherCustomerArray.contains(element)){
-                System.out.println(element);
-               return false;
+                return false;
            }
        }
         return true;
