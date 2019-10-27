@@ -17,8 +17,8 @@ public class Main {
         customerArray.add("Eleven");
         System.out.println(customerArray.getSize());
         System.out.println(customerArray.getByIndex(1));
-        customerArray.deleteByIndex(1);
-        customerArray.deleteByValue("Four");
+        customerArray.delete(1);
+        customerArray.delete("Four");
         System.out.println(customerArray.toString());
         System.out.println((customerArray.contains("Six"))? "Array contains Six": "Array doesn't contain Six");
         System.out.println( customerArray.equals( customerArray));

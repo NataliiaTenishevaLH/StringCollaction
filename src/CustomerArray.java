@@ -62,7 +62,7 @@ public class CustomerArray {
     }
 
     //Удалять
-    public boolean deleteByIndex(int index) {
+    public boolean delete(int index) {
 
         if (index > count) {
             return false;
@@ -72,7 +72,7 @@ public class CustomerArray {
          return true;
     }
 
-    public boolean deleteByValue(String value){
+    public boolean delete(String value){
 
         if (!contains(value)){
             return false;
