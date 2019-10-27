@@ -113,8 +113,14 @@ public class CustomerArray {
     }
 
     //Метод очистить
-    public void  clear(){
-        Arrays.fill(this.customerArray, null);
+    public boolean  clear(){
+        try {
+            Arrays.fill(this.customerArray, null);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
     }
 
     //Проверять на равенство двух коллекций
@@ -136,14 +142,20 @@ public class CustomerArray {
     }
 
     //Метод trim
-    public void trim(){
+    public boolean trim(){
         int countDeleted = 0;
         for(int i = 0; i < this.customerArray.length; i++){
              if (customerArray[i] == null) {
                  countDeleted++;
              }
         }
-        refactoringCustomerArray(this.customerArray.length - countDeleted, countDeleted);
+
+        try {
+            refactoringCustomerArray(this.customerArray.length - countDeleted, countDeleted);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 
